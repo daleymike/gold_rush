@@ -10,12 +10,12 @@
 </head>
 <body>
     <h1 class="text-warning">Gold Rush</h1>
-    <h2 class="text-muted">Obtain 250 Golds in less than 15 moves</h2>
+    <h2 class="text-muted">Obtain 200 Golds in less than 15 moves</h2>
     <div class="container">
         <div class="header">
             <p class="font-weight-bold">Current Gold: <span>{{session['gold']}}</span> </p>
             <p class="font-weight-bold">Moves Remaining: <span>{{session['moves']}}</span></p>
-            {% if session['moves'] < 1 and session['gold'] < 250%}
+            {% if session['moves'] < 1 and session['gold'] < 200%}
             <div class="reset border border-danger">
                 <h2 class="text-danger font-weight-bold">GAME OVER</h2>
                 <div class="reset_button">
@@ -25,7 +25,7 @@
             </div>
             </div>
             {% endif %}
-            {% if session['moves'] < 1 and session['gold'] >= 250%}
+            {% if session['moves'] < 1 and session['gold'] >= 200%}
             <div class="reset border border-success">
                 <h2 class="text-success font-weight-bold">YOU WIN!</h2>
                 <div class="reset_button">
