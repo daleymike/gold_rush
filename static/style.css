@@ -1,0 +1,50 @@
+h1, h2, h3{
+    text-align: center;
+}
+
+.header{
+    padding-top: 20px;
+}
+
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.places{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.footer{
+    padding-top: 20px;
+}
+
+.textbox{
+    overflow-y: scroll;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: auto;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.reset_button{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.won{
+    color: green;
+}
+.lost{
+    color: red;
+}
